@@ -27,7 +27,7 @@ Now, you must check what SDD/HDD is going to be installed the S.O. In my case I'
 The first above commando is going to show the available HDD/SSD and the second /dev/sdx where "x" you must change it for the disk of you election.
 This configurations depends what do you want. In my case I use a /home partition and root partition.
 
-![KRT](https://i.imgur.com/RqambFr.png)
+![enter image description here](https://i.imgur.com/129Rf7O.png)
 
 Now you need to format and activate your swap is you choose it. You can use **fdisk -l** if you don't know what is your disk.
 
@@ -46,6 +46,9 @@ Then you need to mount it
 	mount /dev/sd6 /mnt/home #Home
 	mount /dev/sdx /mnt/boot #Dual Boot
 	mount /dev/sdx /mnt/windows10 #Windows10
+
+![enter image description here](https://i.imgur.com/foifBrK.png)
+
 Now you can install Linux with pacstrap, also you can install aditionals programs like nano, git, etc.
 
 	pacstrap -K /mnt base linux linux-firmware nano 
