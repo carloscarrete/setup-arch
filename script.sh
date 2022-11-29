@@ -8,4 +8,4 @@ locale-gen
 mv ./locale.conf /etc/locale.conf
 mv ./vconsole.conf /etc/vconsole.conf
 echo carlos >> /etc/hostname
-pacman -S grub efibootmgr os-prober ntfs-3g networkmanager network-manager-applet wireless_tools wpa_supplicant dialog mtools dosfstools base-devel linux-headers git bluez bluez-utils pulseaudio-bluetooth cups openssh --noconfirm
+pacman -S grub efibootmgr os-prober ntfs-3g dialog mtools dosfstools base-devel linux-headers git --noconfirm
