@@ -11,4 +11,4 @@ echo carlos >> /etc/hostname
 pacman -S grub efibootmgr os-prober ntfs-3g networkmanager \
 network-manager-applet wireless_tools wpa_supplicant dialog \
 mtools dosfstools base-devel linux-headers git bluez \ 
-pulseaudio-bluetooth cups openssh --noconfirm
+cups openssh --noconfirm
