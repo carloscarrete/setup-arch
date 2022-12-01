@@ -32,7 +32,7 @@ yay -S ttf-ms-fonts
 yay -S timeshift
 
 sudo pacman -S \
-xf86-video-intel xorg xorg-init \
+xf86-video-intel xorg xorg-xinit \
 bspwm sxhkd rofi nitrogen picom \
 xfce4-terminal arandr chromium 
 
@@ -41,7 +41,7 @@ sleep 5
 
 yay -S polybar pacman-contrib ttf-font-awesome \
 siji-git pulseaudio alsa-utils betterlockscreen \
-xdpyinfo xrandr bc nemo
+xdpyinfo xrandr bc nemo arandr
 
 cd ../..
 mkdir .config
