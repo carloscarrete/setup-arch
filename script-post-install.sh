@@ -10,11 +10,15 @@ BICyan='\033[1;96m'       # Cyan
 BIWhite='\033[1;97m'      # White
 
 #Elemental apps
+echo -e "${BIGreen} Now the elemental apps are going to be installed..."
+sleep 5
 sudo pacman -S git bluez bluez-utils pulseaudio-bluetooth cups openssh \
 wpa_supplicant dialog mtools dosfstools linux-headers \
 networkmanager network-manager-applet wireless_tools base-devel flameshot
 
 #Configuration
+echo -e "${BIGreen} Now the configuration for the system is going to be configured..."
+sleep 5
 sudo systemctl enable NetworkManager
 sudo systemctl enable bluetooth
 sudo systemctl enable org.cups.cupsd
@@ -34,12 +38,17 @@ xf86-video-intel xorg xorg-init \
 bspwm sxhkd rofi nitrogen picom \
 xfce4-terminal arandr chromium 
 
+echo -e "${BIGreen} Now started my custom settings..."
+sleep 5
+
+yay -S polybar pacman-contrib ttf-font-awesome \
+siji-git pulseaudio alsa-utils betterlockscreen \
+xdpyinfo xrandr bc nemo
+
 cd ../..
 mkdir .config
 cp ./config/.xinitrc .
 cp ./config/ .config -r
 
-yay -S polybar pacman-contrib ttf-font-awesome \
-siji-git pulseaudio alsa-utils betterlockscreen \
-xdpyinfo xrandr bc feh
-
+echo -e "${BIPurple} Done..."
+sleep 5
