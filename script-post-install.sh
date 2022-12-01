@@ -47,7 +47,7 @@ cd ../..
 mkdir .config
 cd setup-arch
 cp ./config/.xinitrc ../
-cp ./config/ ../.config -r
+cp ./config/* ../.config -r
 
 echo -e "${BIPurple} Done..."
 sleep 5
