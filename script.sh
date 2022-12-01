@@ -9,7 +9,7 @@ locale-gen
 mv ./locale.conf /etc/locale.conf
 mv ./vconsole.conf /etc/vconsole.conf
 echo $hostname >> /etc/hostname
-pacman -S grub efibootmgr os-prober ntfs-3g dialog mtools dosfstools base-devel linux-headers git --noconfirm
+pacman -S grub efibootmgr os-prober ntfs-3g dialog mtools dosfstools base-devel linux-headers networkmanager network-manager-applet wireless_tools --noconfirm
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
 ##TODO: Upload a new grub

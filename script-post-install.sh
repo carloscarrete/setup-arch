@@ -14,7 +14,7 @@ echo -e "${BIGreen} Now the elemental apps are going to be installed..."
 sleep 5
 sudo pacman -S git bluez bluez-utils pulseaudio-bluetooth cups openssh \
 wpa_supplicant dialog mtools dosfstools linux-headers \
-networkmanager network-manager-applet wireless_tools base-devel flameshot
+base-devel flameshot
 
 #Configuration
 echo -e "${BIGreen} Now the configuration for the system is going to be configured..."
