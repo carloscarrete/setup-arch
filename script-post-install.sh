@@ -19,9 +19,7 @@ base-devel flameshot
 #Configuration
 echo -e "${BIGreen} Now the configuration for the system is going to be configured..."
 sleep 5
-sudo systemctl enable NetworkManager
 sudo systemctl enable bluetooth
-sudo systemctl enable org.cups.cupsd
 sudo systemctl enable cups #if the above command doesn't works
 sudo systemctl enable sshd
 
