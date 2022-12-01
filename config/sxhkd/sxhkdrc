@@ -141,7 +141,7 @@ super + x
 
 # Screencapture
 super + alt + b
-	scrot
+	flameshot gui
 
 super + alt + s
 	scrot -s
