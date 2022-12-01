@@ -45,8 +45,9 @@ xdpyinfo xrandr bc nemo arandr
 
 cd ../..
 mkdir .config
-cp ./config/.xinitrc .
-cp ./config/ .config -r
+cd setup-arch
+cp ./config/.xinitrc ../
+cp ./config/ ../.config -r
 
 echo -e "${BIPurple} Done..."
 sleep 5
