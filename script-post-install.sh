@@ -49,7 +49,11 @@ siji-git pulseaudio alsa-utils betterlockscreen \
 xdpyinfo xrandr bc nemo arandr
 
 cd ../..
-mkdir .config
+if [[ ! -d ./config ]]
+then
+    echo -e "${BIRed } Creating the .config dir"
+    mkdir .config
+fi
 cd setup-arch
 cp ./config/.xinitrc ../
 cp ./config/* ../.config -r
