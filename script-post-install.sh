@@ -23,6 +23,11 @@ sudo systemctl enable bluetooth
 sudo systemctl enable cups #if the above command doesn't works
 sudo systemctl enable sshd
 
+echo -e "${BIGreen} If you have Dual Boot it will be enabled"
+sleep 5
+grub-mkconfig -o /boot/grub/grub.cfg
+
+
 #Initialize
 git clone https://aur.archlinux.org/yay.git
 cd yay

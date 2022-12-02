@@ -14,7 +14,7 @@ systemctl enable NetworkManager
 
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
-##TODO: Upload a new grub
+mv ./grub /etc/default/grub
 grub-mkconfig -o /boot/grub/grub.cfg
 
 read -p "Introduzca el nombre de usuario deseado: " username

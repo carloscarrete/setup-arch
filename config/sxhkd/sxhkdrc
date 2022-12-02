@@ -140,11 +140,11 @@ super + x
 	betterlockscreen -l dimblur
 
 # Screencapture
-super + alt + b
+super + alt + s
 	flameshot gui
 
-super + alt + s
-	scrot -s
+super + alt + b
+	scrot 
 
 # Open Nemo File Explorer
 super + alt + e
