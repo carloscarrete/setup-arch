@@ -56,6 +56,8 @@ Now you can install Linux with pacstrap, also you can install aditionals program
 Now the next steps is following the documentation, I recommend you chek it only if someone has changed.
 https://wiki.archlinux.org/title/Installation_guide_(Espa%C3%B1ol)
 
+# Normal Installation (Without Script)
+
 Generate a fstab
 	
 	genfstab -U /mnt >> /mnt/etc/fstab
@@ -131,3 +133,88 @@ Finally you need to run
 	unmount -a
 	reboot
 
+# Installation With Script
+
+If you clone this repository you have all the files for making the installation with script. It's very simple you just need run de **script.sh** and that's all. 
+If you don't have cloned this repository, you have to do the next steps.
+
+	git clone https://github.com/carloscarrete/setup-arch
+	cd setup-arch
+	chmod +x script.sh #For being able to run the script
+	./script.sh
+And that's all. Maybe only you need to create your user and password. I'm working for fixing this, 
+
+## Pre-Install
+
+### Running the script
+![enter image description here](https://i.imgur.com/FLtyegF.png)
+
+###  IMG 1
+
+![enter image description here](https://i.imgur.com/YcMkfar.png)
+
+###  IMG 2
+
+![enter image description here](https://i.imgur.com/faWg6c5.png)
+
+###  IMG 3
+
+![enter image description here](https://i.imgur.com/P0M8TYP.png)
+
+When you type your password and the script tells you you have done, you can reboot your computer and start the script post-install.
+
+## Install
+
+If you clone this repository you have all the files for making the installation with script. It's very simple you just need run de **script-post-install.sh** and that's all. 
+If you don't have cloned this repository, you have to do the next steps.
+
+	git clone https://github.com/carloscarrete/setup-arch
+	cd setup-arch
+	chmod +x script.sh #For being able to run the script
+	./script-post-install.sh
+
+### Running the script
+
+![enter image description here](https://i.imgur.com/AxhQvi3.png)
+
+### IMG 1
+
+![enter image description here](https://i.imgur.com/BlCrWdj.png)
+
+### IMG 2
+
+![enter image description here](https://i.imgur.com/q3z58P3.png)
+
+### IMG 3
+
+![enter image description here](https://i.imgur.com/KFEx287.png)
+
+### IMG 4
+
+![enter image description here](https://i.imgur.com/wDRRhV4.png)
+
+## Install optional apps
+
+This little script made with love will save you time in the installation of some programs, these programs are the ones I use the most, so you can use the checkbox to mark if you want to install a program or not.
+
+If you clone this repository you have all the files for making the installation with script. It's very simple you just need run de **apps.sh** and that's all. 
+If you don't have cloned this repository, you have to do the next steps.
+
+	git clone https://github.com/carloscarrete/setup-arch
+	cd setup-arch
+	chmod +x script.sh #For being able to run the script
+	./apps.sh
+	
+### Running the script
+
+![enter image description here](https://i.imgur.com/txCfvcL.png)
+
+### IMG 1
+Select your apps!!
+![enter image description here](https://i.imgur.com/3N82OzY.png)
+
+### IMG 2
+
+![enter image description here](https://i.imgur.com/Eek9JdS.png)
+
+And when all is done you can login in your computer!!
