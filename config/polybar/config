@@ -65,7 +65,7 @@ foreground-power-normallabel = #e32222
 foreground-title = #FFF
 
 [bar/example]
-;monitor = ${env:MONITOR:HDMI-1}
+monitor = HDMI1
 width = 100%
 height = 20
 ;offset-x = 1%
@@ -532,3 +532,88 @@ margin-top = 5
 margin-bottom = 5
 
 ; vim:ft=dosini
+
+;;;;;Second Monitor/Aux
+
+[bar/second]
+monitor = eDP1
+width = 100%
+height = 20
+;offset-x = 1%
+;offset-y = 1%
+radius = 0.0
+fixed-center = false
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 1
+line-color = #00564d
+
+border-size = 0
+border-color = #0D00564d
+
+padding-left = 0
+padding-right = 1
+
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = Droid Sans Mono:style=Regular:pixelsize=10;2
+# font-1 = Font Awesome 6 Brands Regular:style=Regular:pixelsize=12;2
+font-1 = unifont:fontformat=truetype:size=14:antialias=false;2
+font-2 = siji:style=Regular:pixelsize=24;2
+font-3 = Font Awesome 6 Free:pixelsize=12;2
+font-4 = Font Awesome 6 Free Solid:pixelsize=12;2
+font-5 = Font Awesome 6 Brands:pixelsize=12;2
+
+modules-left = bspwm2 i3
+modules-center = xwindow
+modules-right =  pulseaudio memory cpu wlan wired-network battery date powermenu
+
+;;;;;;;;;;;;;;;;;;;;;;;separator = |
+tray-position = none
+tray-padding = 2
+;tray-background = #0063ff
+
+;wm-restack = bspwm
+;wm-restack = i3
+
+;override-redirect = true
+
+;scroll-up = bspwm-desknext
+;scroll-down = bspwm-deskprev
+
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
+
+cursor-click = pointer
+eursor-scroll = ns-resize
+
+
+
+[module/bspwm2]
+type = internal/bspwm
+
+label-focused = %icon%
+label-focused-background = ${colors.background-alt}
+label-focused-underline= ${colors.primary}
+label-focused-padding = 2
+
+label-occupied = %icon%
+label-occupied-padding = 2
+
+label-urgent = %index%!
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 2
+
+label-empty = %icon%
+label-empty-foreground = ${colors.foreground-alt}
+label-empty-padding = 2
+
+; Separator in between workspaces
+label-separator = |
+
+ws-icon-0 = VIII;
+ws-icon-1 = IX; 
+ws-icon-2 = X; 
